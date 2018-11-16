@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width-device-width, initial-scale-1.0, maximum-scale=1.0, shrink-to-fit=no">
+	<meta http-equiv="X-UA-Compatible" content="IE-Edge">
+	<title> Bootstrap Intro</title>
+
+	<!-- font awesome icon -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+	<!-- bootstrap css always first to overide external css-->
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+	<!-- external css -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+	<!-- Animation -->
+	<link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+
+	
+
+</head>
+
+<body>
+
+	<div class="container-fluid"> <!-- with fluid it expands --> 
+		
+		<nav class="navbar navbar-expand-lg navbar-dark bg-primary">  <!-- navbar-expand-lg on large scree -->
+			<a class="navbar-brand" href="#">							<!-- navbar dark and light BS assume if dark background font is white and light to black -->  <!-- primary is for color like success to green -->
+				<i class="far fa-hand-peace"></i> Batch 19
+			</a>
+
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-nav">
+				<span class="navbar-toggler-icon"></span> <!-- data-target matches the div id navbar nav that holds the list, collapse is for dropping down --> <!-- navbar-toggler-icon is the burger icon -->
+			</button>
+
+			<div id="navbar-nav" class="collapse navbar-collapse">
+				
+				<ul class="navbar-nav ml-auto">  <!-- ml-auto is putting elements to the right -->
+					<li class="nav-item">
+						<a class="nav-link" href="#"> Home </a>
+					</li>
+					
+					<li class="nav-item">
+						<a class="nav-link active" href="#"> About </a>
+					</li>
+
+					<li class="nav-item">
+						<a class="nav-link" href="#"> Cart <span class="badge badge-danger">2</span></a>
+					</li>
+
+					<li class="nav-item">
+						<a  class="nav-link" href="#"> FAQs </a>
+					</li>
+					<!-- DROPDOWN -->
+
+					<li class="nav-item">
+						<div class="dropdown">
+							<button class="btn btn-outline-danger dropdown-toggle" data-toggle="dropdown">Register</button>
+							<div class="dropdown-menu">
+								<a href="#" class="dropdown-item">Username</a>
+								<a href="#" class="dropdown-item">Password</a>
+								<a href="#" class="dropdown-item">Login</a>
+							</div>
+						</div> <!-- end of dropdown -->
+					</li>
+				</ul>
+
+			</div> <!-- end navbar nav -->
+		</nav> <!-- end nave -->
+	</div>
+
+	<div class="container">
+		<nav>
+			<ol class="breadcrumb">
+				<li class="breadcrumb-item">Bahay</li>
+				<li class="breadcrumb-item">Sumakay ng kotse</li>
+				<li class="breadcrumb-item active">Enzo Building</li> <!--  ACTIVE MAKES THE ELEMENT STAND OUT or notifying you that you are on that page -->
+			</ol>
+		</nav>
+
+		<div class="alert alert-danger">
+			<h2 class="alert-heading">Time to go back to CSS</h2>
+			<small>I miss CSS!</small>
+			<hr class="my-3">
+			<p>Bootstrap is too easy!</p>	
+		</div>
+
+
+
+		<div class="jumbotron text-center">
+			<h1 class="display-1 animated bounce">This is my clean website</h1>
+			<hr class="my-3"> <!-- margin y axis -->
+			<p>This is created by Carlos Joseph O. Villanueva who is powered by coffee and Gatorade</p>
+		</div> <!-- END OF JUMBO -->
+
+		<img class="img-fluid" src="assets/images/brolly.jpg"> <!-- img-fuild makes the picture responsive on mobile and tablets
+ -->
+
+
+		<div class="progress">
+			<div id="warn" class="progress-bar bg-warning"></div>
+		</div>	
+			
+		<div class="progress">	
+			<div id="success" class="progress-bar bg-success"></div>
+		</div>
+
+		<div class="progress">
+			<div id="info" class="progress-bar bg-info progress-bar-striped progress-bar-animated"></div>
+		</div>	
+    	
+		<div class="media">
+			<img  id="img" class="mr-3" src="assets/images/brolly.jpg" alt="pag di nagload">
+			<div class="media-body">
+				<h5 class="mt-0">Juan Dela Cruz</h5>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>		
+		</div>
+
+		<ul class="list-group">
+ 			<li class="list-group-item">First</li>
+  			<li class="list-group-item active">Second</li>
+  			<li class="list-group-item">Third</li>
+  			<li class="list-group-item">Fourth</li>
+		</ul>
+
+		<div class="card">
+			<img class="img-fluid" src="assets/images/brolly.jpg" class="card-img-top">
+			<div class="card-body">
+				<h5 class="card">Card Title</h5>
+				<p class="card-text">A quick brown fox jumps over the lazy dog.</p>
+				<a href="#" class="btn btn-primary">Take me home</a>
+			</div>
+		</div>
+ 
+
+
+
+
+
+
+
+
+		<div class="btn-group">
+			<button class="btn btn-danger">Apple</button>
+			<button class="btn btn-outline-info">Samsung</button>
+			<button class="btn btn-warning">Cherry</button>
+		</div>
+	</div> <!-- end of container -->
+
+	<form>
+		<div class="input-group">
+			<div class="input-group-prepend">
+				<span class="input-group-text">Email
+				</span>
+			</div>
+				<input type="email" class="form-control" placeholder="Input Email Here"></input>
+		</div>
+
+		<div class="form-group">
+			<label for="username">Username:</label>
+			<input id="username" type="text" class="form-control"></input>
+		</div>
+
+		<div class="form-group">
+			<label for="text-area">Comments:</label>
+			<textarea id="text-area" class="form-control" rows="3" placeholder="Comments Section"></textarea>
+		</div>
+
+	</form>
+
+	<nav>
+		<ul class="pagination">
+			<li class="page-item">
+				<a class="page-link" href="#">Back</a>
+			</li>
+
+			<li class="page-item">
+				<a class="page-link" href="#">1</a>
+			</li>
+
+			<li class="page-item">
+				<a class="page-link" href="#">2</a>
+			</li>
+
+			<li class="page-item">
+				<a class="page-link" href="#">Next</a>
+			</li>
+		</ul>
+	</nav>
+
+
+
+
+
+
+
+
+
+<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- downloaded production jquery 3.3.1 -->
+	<script src="assets/js/jquery-3.3.1.min.js"></script>
+	<!-- downloaded from bootstrap js popper -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<!-- bootstrap js in local folder -->
+	<script src="assets/js/bootstrap.min.js"></script>
+
+
+
+
+
+
+</body>

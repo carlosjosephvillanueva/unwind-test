@@ -1,0 +1,32 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+[class*="col-"] {
+	border: 1px solid black;
+	margin-top: 10px;	
+}
+/*
+bootstrap components
+dropdowns
+button groups
+button dropdowns
+*/
+
+#warn {
+	width: 25%;
+}
+
+#success {
+	width: 50%;
+}
+#info {
+	width: 95%;
+}
+
+#img {
+	width: 30%;
+	height: 30%;
+}

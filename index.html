@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width-device-width, initial-scale-1.0, maximum-scale=1.0, shrink-to-fit=no">
+	<meta http-equiv="X-UA-Compatible" content="IE-Edge">
+	<title> Bootstrap Intro</title>
+
+	<!-- font awesome icon -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+	<!-- bootstrap css always first to overide external css-->
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+	<!-- external css -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+
+	<div class="container-fluid"> <!-- with fluid it expands --> 
+		
+		<nav class="navbar navbar-expand-lg navbar-dark bg-primary">  <!-- navbar-expand-lg on large scree -->
+			<a class="navbar-brand" href="#">							<!-- navbar dark and light BS assume if dark background font is white and light to black -->  <!-- primary is for color like success to green -->
+				<i class="far fa-hand-peace"></i> Batch 19
+			</a>
+
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-nav">
+				<span class="navbar-toggler-icon"></span> <!-- data-target matches the div id navbar nav that holds the list, collapse is for dropping down --> <!-- navbar-toggler-icon is the burger icon -->
+			</button>
+
+			<div id="navbar-nav" class="collapse navbar-collapse">
+				
+				<ul class="navbar-nav ml-auto">  <!-- ml-auto is putting elements to the right -->
+					<li class="nav-item">
+						<a class="nav-link" href="#"> Home </a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#"> About </a>
+					</li>
+
+					<li class="nav-item">
+						<a  class="nav-link" href="#"> FAQs </a>
+					</li>
+					<!-- DROPDOWN -->
+
+					<li class="nav-item">
+						<div class="dropdown">
+							<button class="btn btn-outline-danger dropdown-toggle" data-toggle="dropdown">Register</button>
+							<div class="dropdown-menu">
+								<a href="#" class="dropdown-item">Username</a>
+								<a href="#" class="dropdown-item">Password</a>
+								<a href="#" class="dropdown-item">Login</a>
+							</div>
+						</div>
+					</li>
+				</ul>
+
+			</div> <!-- end navbar nav -->
+		</nav> <!-- end nave -->
+	</div>
+
+	<div class="row">
+		<div class="col-md-1"> col </div>
+		<div class="col-md-1"> col </div>
+		<div class="col-md-1"> col </div>
+		<div class="col-md-1"> col </div>
+		<div class="col-md-1"> col </div>
+		<div class="col-md-1"> col </div>
+		<div class="col-md-1"> col </div>
+		<div class="col-md-1"> col </div>
+		<div class="col-md-1"> col </div>
+		<div class="col-md-1"> col </div>
+		<div class="col-md-1"> col </div>
+		<div class="col-md-1"> col </div>
+	</div> <!-- end row -->
+
+	<div class="row">
+		<div class="col-lg-8 col-12 col-md-8">8 cols</div>
+		<div class="col-lg-4 col-6 col-md-4">4 cols</div>	
+	</div>	
+
+	<div class="row">
+		<div class="col-lg-4 col-6 col-md-4">4 cols</div>
+		<div class="col-lg-4 col-6 col-md-4">4 cols</div>
+		<div class="col-lg-4 col-6 col-md-4">4 cols</div>	
+	</div>	
+
+	<div class="row">
+		<div class="col-lg-6 col-6">6 cols</div>
+		<div class="col-lg-6 col-6">6 cols</div>	
+	</div>	
+
+	<!-- OFFSETTING COLUMNS -->
+
+	<div class="row">
+		<div class="col-md-4">first w/o offset</div>
+		<div class="col-md-4 offset-md-4">w/offset 4 cols</div>
+	</div> <!-- end of offset container -->
+
+	<div class="row">
+		<div class="col-md-3 offset-md-3">cols</div>
+		<div class="col-md-3 offset-md-3">cols</div>
+	</div>
+
+	<div class="row">
+		<div class="col-md-6 offset-md-3">boom</div>
+	</div>
+
+	<!-- NESTED COLUMNS -->   <!-- Equals to 12 columns, but 12 columns of 9 columns etc of the parent row -->
+	<div class="row">
+		<div class="col-md-9">
+			<p>First level</p>
+			<div class="row">
+				<div class="col-md-8">
+					<div class="row">
+						<div class="col-md-6">nested 8</div>
+						<div class="col-md-6">nested 8</div>
+					</div>
+				</div>
+-
+				<div class="col-md-4">
+					<div class="row">
+						<div class="col-md-6">nested 8</div>
+						<div class="col-md-6">nested 8</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- COLUMN ORDERING -->
+
+	<div class="row">
+		<div class="col-md-9 order-12">this is 9 na nauna</div>
+		<div class="col-md-3 order-1">this is 3 na nauna</div>
+	</div>
+
+
+	<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- downloaded production jquery 3.3.1 -->
+	<script src="assets/js/jquery-3.3.1.min.js"></script>
+	<!-- downloaded from bootstrap js popper -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<!-- bootstrap js in local folder -->
+	<script src="assets/js/bootstrap.min.js"></script>
+
+</body>
+</html>
