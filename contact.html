@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, shrink-to-fit=no">
+	<meta http-equiv="X-UA-Compatible" content="IE-Edge">
+	<title> Homepage | Unwind </title>
+
+	<!-- font awesome icon -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+	<!-- bootstrap css always first to overide external css-->
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+	<!-- external css -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+	<!-- Animation -->
+	<link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+
+</head>
+
+<body>
+
+
+	<div id="nav" class="container-fluid sticky-top"> <!-- with fluid it expands --> 
+		
+		<nav class="navbar navbar-light navbar-expand-lg">  <!-- navbar-expand-lg on large scree -->
+			<a id="unwind" class="navbar-brand" href="#">							<!-- navbar dark and light BS assume if dark background font is white and light to black -->  <!-- primary is for color like success to green -->
+				<i class="far fa-hand-peace"></i> Unwind
+			</a>
+
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-nav">
+				<span  id="tog" class="navbar-toggler-icon"></span> <!-- data-target matches the div id navbar nav that holds the list, collapse is for dropping down --> <!-- navbar-toggler-icon is the burger icon -->
+			</button>
+
+			<div id="navbar-nav" class="collapse navbar-collapse">
+				
+				<ul class="navbar-nav ml-auto">  <!-- ml-auto is putting elements to the right -->
+					
+					<li class="nav-item active">
+						<a id="navt" class="nav-link" href="index2.html#jumbotron-section"> About </a>
+					</li>
+
+						<li class="nav-item active">
+						<a id="navt" class="nav-link" href="#carousel-home"> Epic Moments </a>
+					</li>
+					
+					<li class="nav-item active">
+						<a id="navt" class="nav-link" href="#"> News <span class="badge badge-danger">2</span></a>
+					</li>
+					
+					<li class="nav-item active">
+						<a id="navt" class="nav-link" href="#"> Contact Us </a>
+					</li>
+
+					<!-- DROPDOWN -->
+					<li id="navt" class="nav-item active">
+						<div class="btn-group">
+							<button id="reg" class="btn btn-outline-info">Profile</button>
+						</div> <!-- end of button -->
+					</li>
+
+				</ul> <!-- end of unordered list -->
+			</div> <!-- end navbar nav -->
+		</nav> <!-- end nave -->
+
+
+		<div class="row">
+			<header class="col-12 col-md-12 col-lg-12">
+				<h1 class="text-center py-3">Contact Us Page</h1>
+			</header>
+
+			<div class="col-12 col-md-6 col-lg-6">
+				<form>
+					<div class="form-group">
+						<label for="username"> Username </label>
+						<input id="username" class="form-control" type="text" placeholder="Enter Your Username Here">
+					</div><!-- end of username form group -->
+
+					<div class="form-group">
+						<label for="email"> Email </label>
+						<input id="email" class="form-control" type="email" placeholder="Enter Your email Here">
+					</div><!-- end of email form group -->
+
+					<div class="form-group">
+						<label for="contact"> Contact </label>
+						<input id="contact" class="form-control" type="number" placeholder="Enter Your contact number Here">
+					</div><!-- end of contact form group -->
+
+					<div class="form-group">
+						<label for="message"> Message: </label>
+						<textarea id="message" class="form-control" type="text" placeholder="Enter Your message number Here"></textarea>
+					</div><!-- end of message form group -->
+
+					<button class="btn btn-block btn-success">
+						Submit
+					</button>
+			
+				</form>
+			</div><!-- end of left side -->
+
+			<div class="col-12 col-md-6 col-lg-6">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241.3662507887066!2d121.04691267993054!3d14.549996720799895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf382855249943b23!2sGoogle+Philippines!5e0!3m2!1sen!2sph!4v1542700143438" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+			</div> <!-- end of right side -->
+
+		</div>
+
+
+
+	</div>
+
+
+	<div class="container-fluid px-0"> <!-- px-0 means x padding on x axis is 0 -->
+		<div id="back" class="jumbotron text-center mb-0">
+
+		</div>
+	</div>
+
+	<!-- START OF FOOTER -->
+	<div class="container-fluid px-0">
+		<footer class="footer bg-primary">
+			<p id="foot" class="text-center mb-0 p-3">Carlos Joseph O. Villanueva | Tuitt Coding Bootcamp</p>
+		</footer>
+	</div>
+	<!-- END OF FOOTER -->
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- downloaded production jquery 3.3.1 -->
+	<script src="assets/js/jquery-3.3.1.min.js"></script>
+	<!-- downloaded from bootstrap js popper -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<!-- bootstrap js in local folder -->
+	<script src="assets/js/bootstrap.min.js"></script>
+
+
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+#jumbo-land {
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.jumbtron hr {
+	background-color: #fff;
+}
+
+.btn a {
+	text-decoration: none;
+	color: #fff;
+}
+
+#jumbo-land {
+	height: 100vh;
+	padding: 20%;
+	/*border-radius: */
+	background-color: #333;
+}
+#img {
+
+}
+/*Carousel CSS*/
+
+#carousel-home img {
+	height: 90vh;
+	max-height: 90vh;
+}

@@ -2,31 +2,105 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	scroll-behavior: smooth;
 }
 
-[class*="col-"] {
-	border: 1px solid black;
-	margin-top: 10px;	
-}
-/*
-bootstrap components
-dropdowns
-button groups
-button dropdowns
-*/
+#nav {
+	position: fixed;
 
-#warn {
-	width: 25%;
 }
 
-#success {
-	width: 50%;
-}
-#info {
-	width: 95%;
+#unwind {
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-weight: bold;
+	font-size: 2rem;
+	color: white;
 }
 
-#img {
-	width: 30%;
-	height: 30%;
+#tog {
+	opacity: 1;
+	background-image: url("../images/arrow1.png");	
 }
+
+#navt{
+	color: #ffffff;
+	font-weight: bold;
+}
+
+#reg {
+	color: white;
+	font-weight: bold;
+}
+
+#back {
+	background-image: url("../images/fireworks1.jpg"); 
+	background-position: fixed;
+	background-size: cover;	
+	background-repeat: no-repeat;
+	/*height: 38.5rem;*/
+	color: white;
+	font-family: 'Open Sans Condensed', sans-serif;
+	height: 100vh;
+}
+
+#slogan {
+	font-size: 7rem;
+}
+
+#slogan2 {
+	font-size: 2.5rem;
+	opacity: .7;
+}
+
+#reg2{
+	color: white;
+	text-decoration: none;
+	font-size: 3rem;
+	text-align: center;
+	margin-right: 2rem;
+}
+
+#about {
+	background-color: #333;
+	border-radius: 0%;
+	height: 100vh;
+}
+
+#car {
+	height: 100%;
+	max-height: 100vh;
+}
+
+#txt{
+	color: white;
+	font-family: 'Open Sans Condensed', sans-serif;	
+}
+
+#txt {
+	font-size: 4rem;
+}
+
+.card-img-top {
+	opacity: .9;
+}
+.card-img-top:hover {
+	opacity: 1;
+}
+
+.card-title {
+	color: white;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 2.5rem;
+}	
+
+.card-text, #txt2 {
+	color: white;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 1.2rem;
+}	
+
+#foot {
+	background-color: #333;
+	color: white;
+}
+
