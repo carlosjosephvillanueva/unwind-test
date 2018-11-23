@@ -1,0 +1,71 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+
+#navx {
+	/*width: 100%;*/
+	/*position: fixed;*/
+	background-color: #333;
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+
+#unwind {
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-weight: bold;
+	font-size: 2rem;
+	color: white;
+}
+
+#tog {
+	opacity: 1;
+	background-image: url("../images/arrow.png");	
+}
+
+#navt{
+	color: #ffffff;
+	font-weight: bold;
+}
+
+#reg {
+	color: white;
+	font-weight: bold;
+}
+
+#reg2 {
+	color: white;
+}
+
+
+#back {
+	background-image: url("../images/pcast.jpg"); 
+	background-position: fixed;
+	background-size: cover;	
+	background-repeat: no-repeat;
+	/*height: 38.5rem;*/
+	color: white;
+	font-weight: bold;
+	font-family: 'Open Sans Condensed', sans-serif;
+	min-height: 100vh;
+	height: 100%;
+	 /**MEDIA QUERRY NEEDED*/
+	border-radius: 0;
+}
+
+#foot {
+	background-color: #333;
+	color: white;
+
+}
+
+#slogan {
+	margin-bottom: 0rem;
+}
+
+#pay {
+	margin-left: 3rem;
+}
+

@@ -9,11 +9,14 @@
 	<!-- font awesome icon -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 
+	<!-- favicon -->
+	<link rel="icon" type="image/gif" href="assets/images/palm.png">
+
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
 	<!-- bootstrap css always first to overide external css-->
 	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
 	<!-- external css -->
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/contact.css">
 
 	<!-- Animation -->
 	<link rel="stylesheet" type="text/css" href="assets/css/animate.css">
@@ -23,10 +26,10 @@
 <body>
 
 
-	<div id="nav" class="container-fluid sticky-top"> <!-- with fluid it expands --> 
+	<div id="whole" class="container-fluid"> <!-- with fluid it expands --> 
 		
 		<nav class="navbar navbar-light navbar-expand-lg">  <!-- navbar-expand-lg on large scree -->
-			<a id="unwind" class="navbar-brand" href="#">							<!-- navbar dark and light BS assume if dark background font is white and light to black -->  <!-- primary is for color like success to green -->
+			<a id="unwind" class="navbar-brand" href="index.html">							<!-- navbar dark and light BS assume if dark background font is white and light to black -->  <!-- primary is for color like success to green -->
 				<i class="far fa-hand-peace"></i> Unwind
 			</a>
 
@@ -39,11 +42,11 @@
 				<ul class="navbar-nav ml-auto">  <!-- ml-auto is putting elements to the right -->
 					
 					<li class="nav-item active">
-						<a id="navt" class="nav-link" href="index2.html#jumbotron-section"> About </a>
+						<a id="navt" class="nav-link" href="index.html#jumbotron-section"> About </a>
 					</li>
 
 						<li class="nav-item active">
-						<a id="navt" class="nav-link" href="#carousel-home"> Epic Moments </a>
+						<a id="navt" class="nav-link" href="index.html#carousel-home"> Epic Moments </a>
 					</li>
 					
 					<li class="nav-item active">
@@ -51,13 +54,13 @@
 					</li>
 					
 					<li class="nav-item active">
-						<a id="navt" class="nav-link" href="#"> Contact Us </a>
+						<a id="navt" class="nav-link" href="contact.html"> Contact Us </a>
 					</li>
 
 					<!-- DROPDOWN -->
 					<li id="navt" class="nav-item active">
 						<div class="btn-group">
-							<button id="reg" class="btn btn-outline-info">Profile</button>
+							<button id="reg" class="btn btn-outline-info">Booking Schedule</button>
 						</div> <!-- end of button -->
 					</li>
 
@@ -68,28 +71,28 @@
 
 		<div class="row">
 			<header class="col-12 col-md-12 col-lg-12">
-				<h1 class="text-center py-3">Contact Us Page</h1>
+				<h1 id="contact" class="text-center py-3">Contact Us Page</h1>
 			</header>
 
 			<div class="col-12 col-md-6 col-lg-6">
 				<form>
 					<div class="form-group">
-						<label for="username"> Username </label>
+						<label id="con" for="username"> Username: </label>
 						<input id="username" class="form-control" type="text" placeholder="Enter Your Username Here">
 					</div><!-- end of username form group -->
 
 					<div class="form-group">
-						<label for="email"> Email </label>
+						<label id="con" for="email"> Email: </label>
 						<input id="email" class="form-control" type="email" placeholder="Enter Your email Here">
 					</div><!-- end of email form group -->
 
 					<div class="form-group">
-						<label for="contact"> Contact </label>
+						<label id="con" for="contact"> Contact: </label>
 						<input id="contact" class="form-control" type="number" placeholder="Enter Your contact number Here">
 					</div><!-- end of contact form group -->
 
 					<div class="form-group">
-						<label for="message"> Message: </label>
+						<label id="con" for="message"> Message: </label>
 						<textarea id="message" class="form-control" type="text" placeholder="Enter Your message number Here"></textarea>
 					</div><!-- end of message form group -->
 
@@ -101,29 +104,30 @@
 			</div><!-- end of left side -->
 
 			<div class="col-12 col-md-6 col-lg-6">
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241.3662507887066!2d121.04691267993054!3d14.549996720799895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf382855249943b23!2sGoogle+Philippines!5e0!3m2!1sen!2sph!4v1542700143438" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241.3662507887066!2d121.04691267993054!3d14.549996720799895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf382855249943b23!2sGoogle+Philippines!5e0!3m2!1sen!2sph!4v1542700143438" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
 			</div> <!-- end of right side -->
-
-		</div>
-
-
-
-	</div>
-
-
-	<div class="container-fluid px-0"> <!-- px-0 means x padding on x axis is 0 -->
-		<div id="back" class="jumbotron text-center mb-0">
-
 		</div>
 	</div>
-
-	<!-- START OF FOOTER -->
+			<!-- START OF FOOTER -->
 	<div class="container-fluid px-0">
-		<footer class="footer bg-primary">
-			<p id="foot" class="text-center mb-0 p-3">Carlos Joseph O. Villanueva | Tuitt Coding Bootcamp</p>
+		<footer id="foot" class="footer">
+			<p class="text-center mb-0 p-3">Carlos Joseph O. Villanueva | Tuitt Coding Bootcamp</p>
+			<div class="text-center">
+				<a href="https://facebook.com" target="_blank"><img src="assets/images/facebook.png"></a>
+				<a href="https://twitter.com" target="_blank"><img src="assets/images/twitter.png"></a>
+				<a href="https://instagram.com" target="_blank"><img src="assets/images/instagram.png"></a>
+			</div>
 		</footer>
 	</div>
 	<!-- END OF FOOTER -->
+
+
+
+
+	
+
+
+	
 
 
 
@@ -149,7 +153,13 @@
 
 
 
-
+	<script>
+		$(document).ready(function() {
+			$(".navbar-nav li a").click(function(event) {
+				$(".navbar-collapse").collapse("hide");
+			});
+		});
+	</script>
 
 
 

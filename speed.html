@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, shrink-to-fit=no">
+	<meta http-equiv="X-UA-Compatible" content="IE-Edge">
+	<title> Homepage | Unwind </title>
+
+	
+	<!-- favicon -->
+	<link rel="icon" type="image/gif" href="assets/images/palm.png">
+
+	<!-- font awesome icon -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+	<!-- bootstrap css always first to overide external css-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+	<!-- external css -->
+	<link rel="stylesheet" type="text/css" href="assets/css/speed.css">
+
+	<!-- jquery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  	
+  	<!-- popper -->
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+ 	
+ 	<!-- bootstrap -->
+ 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+	<!-- Animation -->
+	<link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+
+</head>
+
+<body>
+
+	<div class="container-fluid px-0"> <!-- with fluid it expands --> 
+		
+		<nav id="navx" class="navbar navbar-light navbar-expand-lg py-0">  <!-- navbar-expand-lg on large scree -->
+			<a id="unwind" class="navbar-brand" href="index.html">							<!-- navbar dark and light BS assume if dark background font is white and light to black -->  <!-- primary is for color like success to green -->
+				<i class="far fa-hand-peace"></i> Unwind
+			</a>
+
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-nav">
+				<span  id="tog" class="navbar-toggler-icon"></span> <!-- data-target matches the div id navbar nav that holds the list, collapse is for dropping down --> <!-- navbar-toggler-icon is the burger icon -->
+			</button>
+
+			<div id="navbar-nav" class="collapse navbar-collapse">
+				
+				<ul class="navbar-nav ml-auto">  <!-- ml-auto is putting elements to the right -->
+					
+					<li class="nav-item active">
+						<a id="navt" class="nav-link" href="index.html#jumbotron-section"> About </a>
+					</li>
+
+					<li class="nav-item active">
+						<a id="navt" class="nav-link" href="index.html#carousel-home"> Epic Moments </a>
+					</li>
+					
+					<li class="nav-item active">
+						<a id="navt" class="nav-link" href="#"> News <span class="badge badge-danger">2</span></a>
+					</li>
+					
+					<li class="nav-item active">
+						<a id="navt" class="nav-link" href="index.html#contact"> Contact Us </a>
+					</li>
+
+					<!-- DROPDOWN -->
+					<li id="navt" class="nav-item active">
+						<div class="btn-group">
+							<button id="reg" class="btn btn-outline-info">Booking Schedule</button>
+						</div> <!-- end of button -->
+					</li>
+				</ul> <!-- end of unordered list -->
+			</div> <!-- end navbar nav -->
+		</nav> <!-- end nave -->
+	</div> <!-- end of division -->
+
+
+
+	<div class="container-fluid px-0"> <!-- px-0 means x padding on x axis is 0 -->
+		
+		<div id="back" class="jumbotron text-left mb-0">
+			<h1  id="slogan" class="animated bounce">Welcome to SpeedDate! </h1>
+			 <!-- margin y axis -->
+			<p id="slogan2">Searching for the one true love?</p>
+			<!-- <div class="container">
+				<a id="join" href="#" class="btn btn-default btn-lg">Join Us!</a>
+			</div> -->
+
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-12 col-md-4 col-lg-4">
+						<div class="card">
+							
+					<!-- START CAROUSEL -->
+
+								<div id="carousel-home" class="carousel slide" data-ride="carousel">
+		
+									<ol class="carousel-indicators">
+										<li data-target="#carousel-home"data-slide-to="0" class="active"></li>
+										<li data-target="#carousel-home" data-slide-to="1"></li>
+										<li data-target="#carousel-home" data-slide-to="2"></li>
+									</ol>
+
+									<div class="carousel-inner">
+										<div class="carousel-item active">
+											<img id="car" class="d-block img-fluid w-100" src="assets/images/resto1.jpg">
+										</div>
+
+										<div class="carousel-item">
+											<img id="car" class="d-block img-fluid w-100" src="assets/images/resto4.jpg">
+										</div>
+
+										<div class="carousel-item">
+											<img id="car" class="d-block img-fluid w-100" src="assets/images/resto7.jpg">
+										</div>
+
+										<a class="carousel-control-prev" href="#carousel-home" role="button" data-slide="prev">
+											<span class="carousel-control-prev-icon"></span>
+											<span class="sr-only">Previous</span>
+										</a>
+
+										<a class="carousel-control-next" href="#carousel-home" role="button" data-slide="next">
+											<span class="carousel-control-next-icon"></span>
+											<span class="sr-only">Next</span>
+										</a>
+									</div>
+								</div>	
+							
+					<!-- END OF CAROUSEL -->		
+						</div>
+						
+						<div class="card-body">
+							<h3 class="card-title">Souq Restaurant, Pampanga</h3>
+							<p class="card-text">Best restaurant in pampanga with a romantic ambiance</p>
+
+							<li id="join" class="nav-item">
+								<div class="btn-group">
+									<button id="reg2" class="btn btn-outline-info" data-toggle="modal" data-target="#modal-1">Book NOW</button>
+								</div> <!-- end of button-->
+							</li> <!-- end of list -->
+						</div>
+					</div><!-- end 4 cols -->
+
+					<div class="col-12 col-md-4 col-lg-4">
+						<div class="card">
+
+							<!-- START CAROUSEL -->
+
+								<div id="carousel-home2" class="carousel slide" data-ride="carousel">
+		
+									<ol class="carousel-indicators">
+										<li data-target="#carousel-home2"data-slide-to="0" class="active"></li>
+										<li data-target="#carousel-home2" data-slide-to="1"></li>
+										<li data-target="#carousel-home2" data-slide-to="2"></li>
+									</ol>
+
+									<div class="carousel-inner">
+										<div class="carousel-item active">
+											<img id="car" class="d-block img-fluid w-100" src="assets/images/resto2.jpg">
+										</div>
+
+										<div class="carousel-item">
+											<img id="car" class="d-block img-fluid w-100" src="assets/images/resto5.jpg">
+										</div>
+
+										<div class="carousel-item">
+											<img id="car" class="d-block img-fluid w-100" src="assets/images/resto8.jpg">
+										</div>
+
+										<a class="carousel-control-prev" href="#carousel-home2" role="button" data-slide="prev">
+											<span class="carousel-control-prev-icon"></span>
+											<span class="sr-only">Previous</span>
+										</a>
+
+										<a class="carousel-control-next" href="#carousel-home2" role="button" data-slide="next">
+											<span class="carousel-control-next-icon"></span>
+											<span class="sr-only">Next</span>
+										</a>
+									</div>
+								</div>	
+							
+					<!-- END OF CAROUSEL -->	
+
+						</div>
+								
+						<div class="card-body">
+							<h3 class="card-title">Blackbird Restaurant, Metro Manila</h3>
+							<p class="card-text">Very romantic place in Metro Manila</p>
+
+							<li id="join" class="nav-item">
+								<div class="btn-group" >
+									<button id="reg2" class="btn btn-outline-info" data-toggle="modal" data-target="#modal-2">Book NOW</button>
+								</div> <!-- end of button-->
+							</li> <!-- end of list -->
+						</div>
+					</div><!-- end 4 cols -->
+
+					<div class="col-12 col-md-4 col-lg-4">
+						<div class="card">
+							
+					<!-- START CAROUSEL -->
+
+								<div id="carousel-home3" class="carousel slide" data-ride="carousel">
+		
+									<ol class="carousel-indicators">
+										<li data-target="#carousel-home3"data-slide-to="0" class="active"></li>
+										<li data-target="#carousel-home3" data-slide-to="1"></li>
+										<li data-target="#carousel-home3" data-slide-to="2"></li>
+									</ol>
+
+									<div class="carousel-inner">
+										<div class="carousel-item active">
+											<img id="car" class="d-block img-fluid w-100" src="assets/images/resto3.jpg">
+										</div>
+
+										<div class="carousel-item">
+											<img id="car" class="d-block img-fluid w-100" src="assets/images/resto6.jpg">
+										</div>
+
+										<div class="carousel-item">
+											<img id="car" class="d-block img-fluid w-100" src="assets/images/resto9.jpg">
+										</div>
+
+										<a class="carousel-control-prev" href="#carousel-home3" role="button" data-slide="prev">
+											<span class="carousel-control-prev-icon"></span>
+											<span class="sr-only">Previous</span>
+										</a>
+
+										<a class="carousel-control-next" href="#carousel-home3" role="button" data-slide="next">
+											<span class="carousel-control-next-icon"></span>
+											<span class="sr-only">Next</span>
+										</a>
+									</div>
+								</div>	
+							
+					<!-- END OF CAROUSEL -->	
+
+
+						</div>
+								
+						<div class="card-body">
+							<h3 class="card-title">Hill Station Restaurant, Baguio</h3>
+							<p class="card-text">Chill and romantic place in Baguio City</p>
+
+							<li id="join" class="nav-item">
+								<div class="btn-group">
+									<button id="reg2" class="btn btn-outline-info" data-toggle="modal" data-target="#modal-3">Book NOW</button>
+								</div> <!-- end of button-->
+							</li> <!-- end of list -->
+						</div>
+					</div><!-- end 4 cols -->
+				</div> <!-- end of row -->	
+		</div> <!-- END OF JUMBO -->	
+	</div> <!-- end of container -->
+	
+
+
+<!-- modal-1 -->
+	<div id="modal-1" class="modal fade show px-0">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content"> <!-- start of modal content, it will pop up -->
+				<header class="modal-header"> <!-- start of modal header -->
+					<h5 class="modal-title">Welcome to Souq Restaurant, Pampanga!</h5>
+					<button class="close" data-dismiss="modal">
+						<span> &times; </span> <!-- Inside span is the button to close like X -->
+					</button>
+				</header> <!-- end of modal header -->
+
+				<div class="modal-body"> <!-- start of modal body -->
+
+					<div class="row">
+						<header class="col-12 col-md-12 col-lg-12">
+							<h1 id="contact" class="text-center py-3">Let's book the restaurant!</h1>
+						</header>
+						<!-- start of left side -->
+						<div class="col-12 col-md-6 col-lg-6">
+							<form>
+								<div class="form-group">
+									<label for="username">Full name <i>(Last name, First name and Middle name)</i> </label>
+									<input id="username" class="form-control" type="text" placeholder="Enter Your Username Here">
+								</div><!-- end of username form group -->
+
+								<div class="form-group">
+									<label for="email"> Email: </label>
+									<input id="email" class="form-control" type="email" placeholder="Enter Your email Here">
+								</div><!-- end of email form group -->
+
+								<div class="form-group">
+									<label for="contact"> Contact: </label>
+									<input id="contact" class="form-control" type="number" placeholder="Enter Your contact number Here">
+								</div><!-- end of contact form group -->
+
+								<form action="">
+									<div class="row mx-2">
+  										<input type="radio" name="gender" value="cash">Cash
+  										<input id="pay" type="radio" name="gender" value="card">Card
+  									</div>
+								</form>
+
+								<button class="btn btn-block btn-success mt-2">Submit</button>
+							</form>
+						</div><!-- end of left side -->	
+
+						<!-- start of right side -->
+						<div class="col-12 col-md-6 col-lg-6">
+							<img src="assets/images/payment.png" width="100%" height="350" frameborder="0" style="border:0" allowfullscreen>
+						</div> <!-- end of right side -->
+					</div> <!-- end of row -->
+				</div> <!-- end of modal body -->
+
+				<footer class="modal-footer">
+					<button class="btn btn-danger" data-dismiss="modal">Close</button>
+				</footer>
+
+			</div><!-- end of modal content -->
+		</div>
+	</div> <!-- end of modal -->
+
+	<!-- data-toggle="modal" data-target="modal-1"  --> <!-- TRIGGER then target
+ -->
+
+ <!-- modal-2 -->
+	<div id="modal-2" class="modal fade show px-0">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content"> <!-- start of modal content, it will pop up -->
+				<header class="modal-header"> <!-- start of modal header -->
+					<h5 class="modal-title">Welcome to Blackbird Restaurant, Metro Manila!</h5>
+					<button class="close" data-dismiss="modal">
+						<span> &times; </span> <!-- Inside span is the button to close like X -->
+					</button>
+				</header> <!-- end of modal header -->
+
+				<div class="modal-body"> <!-- start of modal body -->
+
+					<div class="row">
+						<header class="col-12 col-md-12 col-lg-12">
+							<h1 id="contact" class="text-center py-3">Let's book the restaurant!</h1>
+						</header>
+						<!-- start of left side -->
+						<div class="col-12 col-md-6 col-lg-6">
+							<form>
+								<div class="form-group">
+									<label for="username">Full name <i>(Last name, First name and Middle name)</i> </label>
+									<input id="username" class="form-control" type="text" placeholder="Enter Your Username Here">
+								</div><!-- end of username form group -->
+
+								<div class="form-group">
+									<label for="email"> Email: </label>
+									<input id="email" class="form-control" type="email" placeholder="Enter Your email Here">
+								</div><!-- end of email form group -->
+
+								<div class="form-group">
+									<label for="contact"> Contact: </label>
+									<input id="contact" class="form-control" type="number" placeholder="Enter Your contact number Here">
+								</div><!-- end of contact form group -->
+
+								<form action="">
+									<div class="row mx-2">
+  										<input type="radio" name="gender" value="cash">Cash
+  										<input id="pay" type="radio" name="gender" value="card">Card
+  									</div>
+								</form>
+
+								<button class="btn btn-block btn-success mt-2">Submit</button>
+							</form>
+						</div><!-- end of left side -->	
+
+						<!-- start of right side -->
+						<div class="col-12 col-md-6 col-lg-6">
+							<img src="assets/images/payment.png" width="100%" height="350" frameborder="0" style="border:0" allowfullscreen>
+						</div> <!-- end of right side -->
+					</div> <!-- end of row -->
+				</div> <!-- end of modal body -->
+
+				<footer class="modal-footer">
+					<button class="btn btn-danger" data-dismiss="modal">Close</button>
+				</footer>
+
+			</div><!-- end of modal content -->
+		</div>
+	</div> <!-- end of modal -->
+
+	<!-- data-toggle="modal" data-target="modal-1"  --> <!-- TRIGGER then target
+ -->
+
+
+
+ <!-- modal-3 -->
+	<div id="modal-3" class="modal fade show px-0">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content"> <!-- start of modal content, it will pop up -->
+				<header class="modal-header"> <!-- start of modal header -->
+					<h5 class="modal-title">Welcome to Hill Station Restaurant, Baguio!</h5>
+					<button class="close" data-dismiss="modal">
+						<span> &times; </span> <!-- Inside span is the button to close like X -->
+					</button>
+				</header> <!-- end of modal header -->
+
+				<div class="modal-body"> <!-- start of modal body -->
+
+					<div class="row">
+						<header class="col-12 col-md-12 col-lg-12">
+							<h1 id="contact" class="text-center py-3">Let's book the restaurant!</h1>
+						</header>
+						<!-- start of left side -->
+						<div class="col-12 col-md-6 col-lg-6">
+							<form>
+								<div class="form-group">
+									<label for="username">Full name <i>(Last name, First name and Middle name)</i> </label>
+									<input id="username" class="form-control" type="text" placeholder="Enter Your Username Here">
+								</div><!-- end of username form group -->
+
+								<div class="form-group">
+									<label for="email"> Email: </label>
+									<input id="email" class="form-control" type="email" placeholder="Enter Your email Here">
+								</div><!-- end of email form group -->
+
+								<div class="form-group">
+									<label for="contact"> Contact: </label>
+									<input id="contact" class="form-control" type="number" placeholder="Enter Your contact number Here">
+								</div><!-- end of contact form group -->
+
+								<form action="">
+									<div class="row mx-2">
+  										<input type="radio" name="gender" value="cash">Cash
+  										<input id="pay" type="radio" name="gender" value="card">Card
+  									</div>
+								</form>
+
+								<button class="btn btn-block btn-success mt-2">Submit</button>
+							</form>
+						</div><!-- end of left side -->	
+
+						<!-- start of right side -->
+						<div class="col-12 col-md-6 col-lg-6">
+							<img src="assets/images/payment.png" width="100%" height="350" frameborder="0" style="border:0" allowfullscreen>
+						</div> <!-- end of right side -->
+					</div> <!-- end of row -->
+				</div> <!-- end of modal body -->
+
+				<footer class="modal-footer">
+					<button class="btn btn-danger" data-dismiss="modal">Close</button>
+				</footer>
+
+			</div><!-- end of modal content -->
+		</div>
+	</div> <!-- end of modal -->
+
+	<!-- data-toggle="modal" data-target="modal-1"  --> <!-- TRIGGER then target
+ -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- START OF FOOTER -->
+	<div class="container-fluid px-0">
+		<footer id="foot" class="footer">
+			<p class="text-center mb-0 p-3">Carlos Joseph O. Villanueva | Tuitt Coding Bootcamp</p>
+			<div class="text-center">
+				<a href="https://facebook.com" target="_blank"><img src="assets/images/facebook.png"></a>
+				<a href="https://twitter.com" target="_blank"><img src="assets/images/twitter.png"></a>
+				<a href="https://instagram.com" target="_blank"><img src="assets/images/instagram.png"></a>
+			</div>
+		</footer>
+	</div>
+	<!-- END OF FOOTER -->
+
+
+<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- downloaded production jquery 3.3.1 -->
+	
+	
+	<!-- bootstrap js in local folder -->
+	
+
+	<script>
+		$(document).ready(function() {
+			$(".navbar-nav li a").click(function(event) {
+				$(".navbar-collapse").collapse("hide");
+			});
+		});
+	</script>
+
+	
+
+
+</body>
+</html>

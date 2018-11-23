@@ -2,147 +2,332 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width-device-width, initial-scale-1.0, maximum-scale=1.0, shrink-to-fit=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, shrink-to-fit=no">
 	<meta http-equiv="X-UA-Compatible" content="IE-Edge">
-	<title> Bootstrap Intro</title>
+	<title> Homepage | Unwind </title>
+
+	
+	<!-- favicon -->
+	<link rel="icon" type="image/gif" href="assets/images/palm.png">
 
 	<!-- font awesome icon -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
 	<!-- bootstrap css always first to overide external css-->
-	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+	
 	<!-- external css -->
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+  	<!-- jquery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  	
+  	<!-- popper -->
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+ 	
+ 	<!-- bootstrap -->
+ 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+	<!-- Animation -->
+	<link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+
 </head>
 
 <body>
 
-	<div class="container-fluid"> <!-- with fluid it expands --> 
+<!-- START OF LANDING AND HOME PAGE -->
+
+
+	<div class="container-fluid sticky-top px-0"> <!-- with fluid it expands --> 
 		
-		<nav class="navbar navbar-expand-lg navbar-dark bg-primary">  <!-- navbar-expand-lg on large scree -->
-			<a class="navbar-brand" href="#">							<!-- navbar dark and light BS assume if dark background font is white and light to black -->  <!-- primary is for color like success to green -->
-				<i class="far fa-hand-peace"></i> Batch 19
+		<nav id="navx" class="navbar navbar-light navbar-expand-lg py-0">  <!-- navbar-expand-lg on large scree -->
+			<a id="unwind" class="navbar-brand" href="#">							<!-- navbar dark and light BS assume if dark background font is white and light to black -->  <!-- primary is for color like success to green -->
+				<i class="far fa-hand-peace"></i> Unwind
 			</a>
 
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-nav">
-				<span class="navbar-toggler-icon"></span> <!-- data-target matches the div id navbar nav that holds the list, collapse is for dropping down --> <!-- navbar-toggler-icon is the burger icon -->
+				<span  id="tog" class="navbar-toggler-icon"></span> <!-- data-target matches the div id navbar nav that holds the list, collapse is for dropping down --> <!-- navbar-toggler-icon is the burger icon -->
 			</button>
 
 			<div id="navbar-nav" class="collapse navbar-collapse">
 				
 				<ul class="navbar-nav ml-auto">  <!-- ml-auto is putting elements to the right -->
-					<li class="nav-item">
-						<a class="nav-link" href="#"> Home </a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#"> About </a>
+					
+					<li class="nav-item active">
+						<a id="navt" class="nav-link" href="#jumbotron-section"> About </a>
 					</li>
 
-					<li class="nav-item">
-						<a  class="nav-link" href="#"> FAQs </a>
+						<li class="nav-item active">
+						<a id="navt" class="nav-link" href="#carousel-home"> Epic Moments </a>
 					</li>
+					
+					<li class="nav-item active">
+						<a id="navt" class="nav-link" href="#"> News <span class="badge badge-danger">2</span></a>
+					</li>
+					
+					<li class="nav-item active">
+						<a id="navt" class="nav-link" href="#contact"> Contact Us </a>
+					</li>
+
 					<!-- DROPDOWN -->
-
-					<li class="nav-item">
-						<div class="dropdown">
-							<button class="btn btn-outline-danger dropdown-toggle" data-toggle="dropdown">Register</button>
-							<div class="dropdown-menu">
-								<a href="#" class="dropdown-item">Username</a>
-								<a href="#" class="dropdown-item">Password</a>
-								<a href="#" class="dropdown-item">Login</a>
-							</div>
-						</div>
+					<li id="navt" class="nav-item active">
+						<div class="btn-group">
+							<button id="reg" class="btn btn-outline-info">Booking Schedule</button>
+						</div> <!-- end of button -->
 					</li>
-				</ul>
 
+				</ul> <!-- end of unordered list -->
 			</div> <!-- end navbar nav -->
 		</nav> <!-- end nave -->
 	</div>
 
-	<div class="row">
-		<div class="col-md-1"> col </div>
-		<div class="col-md-1"> col </div>
-		<div class="col-md-1"> col </div>
-		<div class="col-md-1"> col </div>
-		<div class="col-md-1"> col </div>
-		<div class="col-md-1"> col </div>
-		<div class="col-md-1"> col </div>
-		<div class="col-md-1"> col </div>
-		<div class="col-md-1"> col </div>
-		<div class="col-md-1"> col </div>
-		<div class="col-md-1"> col </div>
-		<div class="col-md-1"> col </div>
-	</div> <!-- end row -->
+	<div class="container-fluid px-0"> <!-- px-0 means x padding on x axis is 0 -->
+		
+		<div id="back" class="jumbotron text-center mb-0">
+			<h1  id="slogan" class="animated bounce">Best. Moment. </h1>
+			<h1  id="slogan" class="animated bounce">Ever.</h1>
+			<hr class="my-6"> <!-- margin y axis -->
+			<p id="slogan2">You only live once.</p>
+			<!-- <div class="container">
+				<a id="join" href="#" class="btn btn-default btn-lg">Join Us!</a>
+			</div> -->
+			<li class="nav-item">
+					<div class="btn-group">
+					<button id="reg2" class="btn btn-outline-info">Join us NOW</button>
+				</div> <!-- end of button -->
+			</li> <!-- end of list -->
+		</div> <!-- END OF JUMBO -->
+	</div> <!-- end of container -->
 
-	<div class="row">
-		<div class="col-lg-8 col-12 col-md-8">8 cols</div>
-		<div class="col-lg-4 col-6 col-md-4">4 cols</div>	
-	</div>	
+<!-- END OF LANDING AND HOME PAGE -->
 
-	<div class="row">
-		<div class="col-lg-4 col-6 col-md-4">4 cols</div>
-		<div class="col-lg-4 col-6 col-md-4">4 cols</div>
-		<div class="col-lg-4 col-6 col-md-4">4 cols</div>	
-	</div>	
+<!-- START OF ABOUT PAGE -->
+	
+	<div class="container-fluid px-0">
+		<section id="jumbotron-section">
+			<div id="about" id="jumbo-land" class="jumbotron mb-0 pt-5">
+				<div class="container-fluid px-0 mt-4">
+					<h1 id="txt" class="text-center">Unwind</h1>
+					<p  id="txt2" class="lead text-center">Turn strangers into friends.</p>
 
-	<div class="row">
-		<div class="col-lg-6 col-6">6 cols</div>
-		<div class="col-lg-6 col-6">6 cols</div>	
-	</div>	
+					<hr class="my-4">
+					<!-- <button class="btn btn-primary btn-block">
+					<a href="home.html"> Take me Home</a>
+					</button>	 -->
+					</div>	
+		
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-12 col-md-4 col-lg-4">
+						<div class="card">
+							<a href="beachcast.html"><img class="card-img-top img-fluid" src="assets/images/beachcast.png"></a>
+						</div>
+						
+						<div class="card-body">
+							<a href="beachcast.html"><h3 class="card-title">Beach Cast</h3></a>
+							<p class="card-text">Imagine your vacation with full of strangers far away from home, on a beautiful beach with an amazing sunset. There will be fun games, boodle fight, bonfire with the team. Sounds exciting right?</p>
+						</div>
+					</div><!-- end 4 cols -->
 
-	<!-- OFFSETTING COLUMNS -->
+					<div class="col-12 col-md-4 col-lg-4">
+						<div class="card">
+							<a href="pubcast.html"><img class="card-img-top img-fluid" src="assets/images/djclub.jpg"></a>
+						</div>
+								
+						<div class="card-body">
+							<a href="pubcast.html"><h3 class="card-title">Pub Cast</h3></a>
+							<p class="card-text">The clubs and bars will be exclusive for Unwine members only for the night. Bar hopping, fun games, drinking games. Will it be the best night ever?</p>
+						</div>
+					</div><!-- end 4 cols -->
 
-	<div class="row">
-		<div class="col-md-4">first w/o offset</div>
-		<div class="col-md-4 offset-md-4">w/offset 4 cols</div>
-	</div> <!-- end of offset container -->
+					<div class="col-12 col-md-4 col-lg-4">
+						<div class="card">
+							<a href="speed.html"><img class="card-img-top img-fluid" src="assets/images/dating.jpg"></a>
+						</div>
+								
+						<div class="card-body">
+							<a href="speed.html"><h3 class="card-title">Speed data-ride</h3></a>
+							<p class="card-text">You'll have the chance to talk to everybody in the group for a given time. Will it be the start of something amazing? </p>
+						</div>
+					</div><!-- end 4 cols -->
+				</div> <!-- end of row -->
 
-	<div class="row">
-		<div class="col-md-3 offset-md-3">cols</div>
-		<div class="col-md-3 offset-md-3">cols</div>
-	</div>
+				<div class="row">
+					<div class="col-12 col-md-6 col-lg-6">
+							<h1 id="mv">Mission</h1>
+							<h1 id="mv2">Our mission is to turn strangers into friends in the most exciting and happiest way possible.</h1>
+					</div>
 
-	<div class="row">
-		<div class="col-md-6 offset-md-3">boom</div>
-	</div>
-
-	<!-- NESTED COLUMNS -->   <!-- Equals to 12 columns, but 12 columns of 9 columns etc of the parent row -->
-	<div class="row">
-		<div class="col-md-9">
-			<p>First level</p>
-			<div class="row">
-				<div class="col-md-8">
-					<div class="row">
-						<div class="col-md-6">nested 8</div>
-						<div class="col-md-6">nested 8</div>
+					<div class="col-12 col-md-6 col-lg-6">
+							<h1 id="mv">Vision</h1>
+							<h1 id="mv2">Our vision is to let people know that life is short, so it must be enjoyed.</h1>
 					</div>
 				</div>
--
-				<div class="col-md-4">
-					<div class="row">
-						<div class="col-md-6">nested 8</div>
-						<div class="col-md-6">nested 8</div>
-					</div>
-				</div>
+
+
+			</div> <!-- end 4 container -->
+
 			</div>
+		</section>
+	</div>
+<!-- END OF ABOUT PAGE -->
+	
+<!-- START CAROUSEL -->
+
+	<div id="carousel-home" class="carousel slide" data-ride="carousel">
+		
+		<ol class="carousel-indicators">
+			<li data-target="#carousel-home" data-slide-to="0" class="active"></li>
+			<li data-target="#carousel-home" data-slide-to="1"></li>
+			<li data-target="#carousel-home" data-slide-to="2"></li>	
+		</ol>
+
+		<div class="carousel-inner">
+			<div class="carousel-item active">
+				<img id="car" class="d-block img-fluid w-100" src="assets/images/wall1.jpg">
+			</div>
+
+			<div class="carousel-item">
+				<img id="car" class="d-block img-fluid w-100" src="assets/images/party4.jpg">
+			</div>
+
+			<div class="carousel-item">
+				<img id="car" class="d-block img-fluid w-100" src="assets/images/party6.jpg">
+			</div>
+
+			<a class="carousel-control-prev" href="#carousel-home" role="button" data-slide="prev">
+				<span class="carousel-control-prev-icon"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+
+			<a class="carousel-control-next" href="#carousel-home" role="button" data-slide="next">
+				<span class="carousel-control-next-icon"></span>
+				<span class="sr-only">Next</span>
+			</a>
+
+		</div>
+
+	</div>	
+	<!-- END OF CAROUSEL -->
+
+
+
+<!-- modal-JOIN -->
+	<div id="modal-1" class="modal fade show px-0">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content"> <!-- start of modal content, it will pop up -->
+				<header class="modal-header"> <!-- start of modal header -->
+					<h5 class="modal-title">Welcome to Unwine!</h5>
+					<button class="close" data-dismiss="modal">
+						<span> &times; </span> <!-- Inside span is the button to close like X -->
+					</button>
+				</header> <!-- end of modal header -->
+
+				<div class="modal-body"> <!-- start of modal body -->
+
+
+
+
+	
+							
+					
+				</div> <!-- end of modal body -->
+
+				<footer class="modal-footer">
+					<button class="btn btn-danger" data-dismiss="modal">Close</button>
+				</footer>
+
+			</div><!-- end of modal content -->
+		</div>
+	</div> <!-- end of modal -->
+
+	<!-- data-toggle="modal" data-target="modal-1"  --> <!-- TRIGGER then target
+ -->
+
+
+
+ 	<div id="whole" class="container-fluid"> <!-- with fluid it expands --> 
+		
+
+
+		<div class="row">
+			<header class="col-12 col-md-12 col-lg-12">
+				<h1 id="contact" class="text-center py-3">Contact Us Page</h1>
+			</header>
+
+			<div class="col-12 col-md-6 col-lg-6">
+				<form>
+					<div class="form-group">
+						<label id="con" for="username"> Username: </label>
+						<input id="username" class="form-control" type="text" placeholder="Enter Your Username Here">
+					</div><!-- end of username form group -->
+
+					<div class="form-group">
+						<label id="con" for="email"> Email: </label>
+						<input id="email" class="form-control" type="email" placeholder="Enter Your email Here">
+					</div><!-- end of email form group -->
+
+					<div class="form-group">
+						<label id="con" for="contact"> Contact: </label>
+						<input id="contact" class="form-control" type="number" placeholder="Enter Your contact number Here">
+					</div><!-- end of contact form group -->
+
+					<div class="form-group">
+						<label id="con" for="message"> Message: </label>
+						<textarea id="message" class="form-control" type="text" placeholder="Enter Your message number Here"></textarea>
+					</div><!-- end of message form group -->
+
+					<button class="btn btn-block btn-success">
+						Submit
+					</button>
+			
+				</form>
+			</div><!-- end of left side -->
+
+			<div class="col-12 col-md-6 col-lg-6">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241.3662507887066!2d121.04691267993054!3d14.549996720799895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf382855249943b23!2sGoogle+Philippines!5e0!3m2!1sen!2sph!4v1542700143438" width="100%" height="430" frameborder="0" style="border:0" allowfullscreen></iframe>
+			</div> <!-- end of right side -->
 		</div>
 	</div>
 
-	<!-- COLUMN ORDERING -->
 
-	<div class="row">
-		<div class="col-md-9 order-12">this is 9 na nauna</div>
-		<div class="col-md-3 order-1">this is 3 na nauna</div>
+
+
+
+
+	<!-- START OF FOOTER -->
+	<div class="container-fluid px-0">
+		<footer id="foot" class="footer">
+			<p class="text-center mb-0 p-3">Carlos Joseph O. Villanueva | Tuitt Coding Bootcamp</p>
+			<div class="text-center">
+				<a href="https://facebook.com" target="_blank"><img src="assets/images/facebook.png"></a>
+				<a href="https://twitter.com" target="_blank"><img src="assets/images/twitter.png"></a>
+				<a href="https://instagram.com" target="_blank"><img src="assets/images/instagram.png"></a>
+			</div>
+		</footer>
 	</div>
+	<!-- END OF FOOTER -->
 
 
-	<!-- Optional JavaScript -->
+<!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <!-- downloaded production jquery 3.3.1 -->
-	<script src="assets/js/jquery-3.3.1.min.js"></script>
+	
 	<!-- downloaded from bootstrap js popper -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	
 	<!-- bootstrap js in local folder -->
-	<script src="assets/js/bootstrap.min.js"></script>
+	
+
+	<script>
+		$(document).ready(function() {
+			$(".navbar-nav li a").click(function(event) {
+				$(".navbar-collapse").collapse("hide");
+			});
+		});
+	</script>
+
+
 
 </body>
 </html>

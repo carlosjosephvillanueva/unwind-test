@@ -5,9 +5,8 @@
 	scroll-behavior: smooth;
 }
 
-#navx {
-	background-color: #333;
-	font-family: 'Open Sans Condensed', sans-serif;
+#nav {
+	/*position: relative;*/
 }
 
 #unwind {
@@ -19,7 +18,7 @@
 
 #tog {
 	opacity: 1;
-	background-image: url("../images/arrow.png");	
+	background-image: url("../images/arrow1.png");	
 }
 
 #navt{
@@ -32,28 +31,24 @@
 	font-weight: bold;
 }
 
-
-
 #back {
-	background-image: url("../images/party3.jpg"); 
+	background-image: url("../images/fireworks1.jpg"); 
 	background-position: fixed;
 	background-size: cover;	
 	background-repeat: no-repeat;
 	/*height: 38.5rem;*/
 	color: white;
 	font-family: 'Open Sans Condensed', sans-serif;
-	height: 38.5rem;
-	border-radius: 0;
-	margin: 0;
+	height: 100vh;
 }
 
 #slogan {
-	font-size: 6rem;
+	font-size: 7rem;
 }
 
 #slogan2 {
 	font-size: 2.5rem;
-	opacity: .9;
+	opacity: .7;
 }
 
 #reg2{
@@ -67,26 +62,25 @@
 #about {
 	background-color: #333;
 	border-radius: 0%;
-	height: 100%;
-	background-size: cover;
+	height: 100vh;
 }
 
 #car {
-	height: 300px;
-	min-height: 100vh;
+	height: 100%;
+	max-height: 100vh;
 }
 
-#txt {
+#txt{
 	color: white;
-	font-family: 'Open Sans Condensed', sans-serif;
+	font-family: 'Open Sans Condensed', sans-serif;	
 }
 
 #txt {
 	font-size: 4rem;
-} /*media query*/
+}
 
 .card-img-top {
-	opacity: .85;
+	opacity: .9;
 }
 .card-img-top:hover {
 	opacity: 1;
@@ -109,35 +103,4 @@
 	color: white;
 }
 
-#mv {
-	color: white;
-	text-align: center;
-	font-family: 'Open Sans Condensed', sans-serif;
-}
-
-#mv2 {
-	color: white;
-	text-align: center;
-	font-family: 'Open Sans Condensed', sans-serif;
-	font-size: 1.2rem;
-}
-
-#contact {
-	color: white;
-}
-
-#whole {
-	background-color: #333;
-	font-family: 'Open Sans Condensed', sans-serif;
-	height: 100vh;
-	height: 100%;	
-}	
-
-#contact {
-	color: #ffffff;
-}
-
-#con {
-	color: white;
-}
 
